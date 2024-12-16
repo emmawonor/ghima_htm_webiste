@@ -1,0 +1,232 @@
+ .card {
+        border: 1px solid #CC0000;
+    }
+
+    .top-navbar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #e9ecef;
+    }
+    .top-navbar .social-icons a {
+      color: #495057;
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+    .typewriter {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #DB5E5E;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .carousel-container {
+      max-width: 95%;
+      margin: auto;
+    }
+    .carousel-item img {
+      width: 100%;
+       height:500px; 
+  object-fit: cover; 
+    }
+    .column-image img {
+      width: 100%;
+      height: auto;
+    }
+    .column-text {
+      display: flex;
+      align-items: center;
+    }
+    .footer {
+      background-color: #F0F0F0;
+      padding: 10px 0;
+    }
+    .footer .footer-col {
+      margin-bottom: 10px;
+    }
+    .footer .footer-col h4 {
+      font-weight: bold;
+      color: #CC0000;
+    }
+    .footer .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer .footer-col ul li {
+      margin-bottom: 5px;
+    }
+    .footer .footer-col ul li a {
+      color: #CC0000;
+      text-decoration: none;
+    }
+    .footer .footer-col ul li a:hover {
+      text-decoration: underline;
+    }
+    .copyright-footer {
+      background-color: #DB5E5E;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+    .logo-carousel {
+      margin: 40px 0;
+    }
+    .logo-carousel img {
+      max-height: 60px;
+      object-fit: contain;
+    }
+    .column-image img {
+  width: 100%; /* Make the image take the full width of the parent */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 50%; /* Apply a 20% border radius */
+}
+
+
+ .horizontal-line {
+            height: 10px; /* Adjust thickness */
+            position: relative;
+            margin: 20px 0; /* Adjust margin */
+            background: transparent;
+        }
+
+        .horizontal-line:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                135deg,
+                #CC0000,
+                #CC0000 8%,
+                transparent 15%,
+                transparent 30%,
+                transparent 30%
+            );
+            animation: wiggle 1s ease-in-out infinite;
+        }
+
+        @keyframes wiggle {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-3px); /* Adjust wiggle effect */
+            }
+        }
+
+        h2 {
+            font-size: 2rem; /* Default size for larger devices */
+        }
+
+        @media (max-width: 576px) { /* For small devices */
+            h2 {
+                font-size: 1.5rem; /* Adjust size for small devices */
+            }
+        }
+
+
+         .btn-utility {
+            background-color: #D16868; /* Base background color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 0.25rem; /* Rounded corners */
+            padding: 10px 20px; /* Padding */
+            position: relative; /* Position relative for animation */
+            overflow: hidden; /* Hide overflow for wave effect */
+            transition: all 0.3s; /* Smooth transition for other effects */
+            animation: wave 4s infinite; /* Start the wave animation */
+        }
+
+        /* Waving animation */
+        @keyframes wave {
+            0% { background-color: #D16868; }
+            25% { background-color: #6A7D9A; }
+            50% { background-color: #AFCB55; }
+            75% { background-color: #FFAA00; }
+            100% { background-color: #D16868; }
+        }
+
+        /* Focus effect */
+        .btn-utility:focus {
+            outline: none; /* Remove default focus outline */
+            box-shadow: 0 0 0 0.2rem rgba(209, 104, 104, 0.5); /* Add custom focus shadow */
+        }
+
+  .navbar-brand {
+        font-weight: bold;
+        color: #CC0000;
+    }
+
+    .nav-link {
+        font-weight: bold;
+        color: #CC0000 !important; /* Set all nav link text color */
+    }
+
+    .nav-link.active {
+        background-color: #CC0000;
+        color: white !important; /* Make text white when active */
+        border-radius: 5px; /* Optional: rounded corners */
+        padding: 8px 15px; /* Optional: add padding to the active link */
+    }
+
+    .nav-link:hover {
+        color: #CC0000; /* Keep hover color the same as text */
+    }
+
+
+
+
+    /* About dropdown color and background */
+    #aboutDropdown {
+        color: #CC0000 !important; /* Set the text color of the dropdown trigger */
+        background-color: transparent !important; /* Transparent background */
+        font-weight: bold;
+    }
+
+    /* Remove border outline when dropdown is focused */
+    .dropdown-toggle:focus {
+        box-shadow: none !important; /* Remove the focus outline */
+    }
+
+    /* Style for dropdown items */
+    .dropdown-item {
+        color: #CC0000 !important; /* Set color of dropdown items */
+    }
+
+    /* Hover effect for dropdown items */
+    .dropdown-item:hover {
+        background-color: #CC6868; /* Add custom hover background color */
+        color: white !important;    /* Change text to white on hover */
+    }
+
+
+
+
+
+/*national officers css*/
+
+    .team-member img {
+  width: 100%;
+  height: 260px; 
+  object-fit: cover; 
+ border-radius: 20%;
+/*  margin-bottom: 5px;*/
+  cursor: pointer; 
+}
+    .team-member h4 {
+      font-size: 1.0em;
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: center; 
+      text-transform: uppercase;
+    }
+    .team-member p {
+      font-size: 0.8em;
+      font-weight: bold;
+      color: #777;
+      text-align: center; 
+      text-transform: uppercase;
+    }
+
+      @media only screen and (max-width: 576px) {
+  .notitle {
+    font-size: 25px;
+  }

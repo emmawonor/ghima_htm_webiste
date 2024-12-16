@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHIMA</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+   <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+<style>
+  
+.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    .gallery-item {
+      margin-bottom: 15px;
+    }
+    .gallery-item img {
+      border-radius: 5px;
+    }
+    .loading-spinner {
+      display: none;
+      margin: 20px auto;
+    }
+.column-image img {
+  width: 100%; /* Make the image take the full width of the parent */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 20%; /* Apply a 20% border radius */
+}
+</style>
+
+  <link rel="stylesheet" type="text/css" href="asset/css/styles.css">
+  
+
+   
+
+
+</head>
+<body>
+
+
+
+
+  <!-- Top Navbar -->
+
+  <div class="top-navbar py-2" style="background-color: #CC0000;">
+  <div class="container">
+    <div class="row d-flex justify-content-between">
+      <!-- Left end: Telephone and Email -->
+      <div class="col-12 col-md-6 mb-2 mb-md-0 text-start">
+        <div class="contact-info" style="color: #FFFFFF;">
+          <a href="tel:+233544278171" title="Call Us" style="color: #FFFFFF;"><i class="fas fa-phone-alt"></i> +233544278171 / +233249441188</a>
+          <!-- <a href="mailto:info@example.com" title="Email Us" class="ms-3" style="color: #FFFFFF;"><i class="fas fa-envelope"></i> info@example.com</a> -->
+        </div>
+      </div>
+
+      <!-- Right end: Social Icons -->
+      <div class="col-12 col-md-6 text-center text-md-end d-flex justify-content-md-end">
+        <div class="social-icons">
+          <a href="https://web.facebook.com/profile.php?id=61555801527304" target="_blank" title="Facebook" style="color: #FFFFFF;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/Ghimagh" target="_blank" title="Twitter" class="ms-2" style="color: #FFFFFF;"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/ghima.gh" target="_blank" title="Instagram" class="ms-2" style="color: #FFFFFF;"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@Ghimagh" target="_blank" title="LinkedIn" class="ms-2" style="color: #FFFFFF;"><i class="fab fa-youtube"></i></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F0F0F0;">
+  <a class="navbar-brand" href="index.html" style="color:#CC0000;">
+    <img src="images/ghima.png" alt="Logo" style="height: 40px;">
+    GHIMA
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="w-100 d-flex justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a> 
+        </li>
+        <li class="nav-item dropdown">
+         
+
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="aboutus.html">Our Story</a>
+            <a class="dropdown-item" href="history.html">Our History</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  id="leadersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Leaders
+          </a>
+          <div class="dropdown-menu" aria-labelledby="leadersDropdown">
+            <a class="dropdown-item" href="nos.html">National Officers</a>
+            <a class="dropdown-item" href="executive.html">Regional Governors</a>
+            <a class="dropdown-item" href="nec.html">National Executive Council</a>
+            <a class="dropdown-item" href="committe.html">Committee Members</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resource.html">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Photo Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+  <!-- Gallery Section -->
+  <div class="container mt-4">
+    <h2 class="text-center" style="color:#CC0000;">Photo Gallery</h2>
+    <div class="row gallery" id="gallery">
+      <!-- Initial Gallery Items -->
+      <div class="col-md-3 gallery-item">
+        <a href="gallery/1.webp" data-lightbox="gallery" data-title="">
+          <img src="gallery/1.webp" alt="Image 1" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-md-3 gallery-item">
+        <a href="gallery/2.jpeg" data-lightbox="gallery" data-title="">
+          <img src="gallery/2.jpeg" alt="Image 2" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-md-3 gallery-item">
+        <a href="gallery/3.jpeg" data-lightbox="gallery" data-title="">
+          <img src="gallery/3.jpeg" alt="Image 3" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-md-3 gallery-item">
+        <a href="gallery/4.webp" data-lightbox="gallery" data-title="">
+          <img src="gallery/4.webp" alt="Image 4" loading="lazy">
+        </a>
+      </div>
+     
+    </div>
+
+
+    <!-- Loading Spinner -->
+    <div class="text-center mt-4 loading-spinner">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Load More Button -->
+    <div class="text-center mt-1 mb-3">
+      <button class="btn " id="loadMoreBtn" style="background-color: #CC0000; color:white; ">Load More</button>
+    </div>
+  </div>
+
+
+
+ 
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer  " >
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="aboutus.html" >Our Story</a></li>
+            <li><a href="history.html" >Our History</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>Leadership</h4>
+          <ul>
+            <li><a href="nos.html" >National Officers</a></li>
+            <li><a href="executive.html" >Regional Governors</a></li>
+            <li><a href="nec.html" >National Executive Council</a></li>
+            <li><a href="committe.html" >Committee Members</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="https://dhims.chimgh.org/dhims/dhis-web-commons/security/login.action" target="_blank">DHIMS 2</a></li>
+            <li><a href="http://reg.ghimaghana.org" target="_blank">GHIMA Login</a></li>
+            <li><a href="https://mis.ahpcgh.org/goodstandstatus" target="_blank">AHPC Status</a></li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Footer -->
+  <div class="copyright-footer">
+    <p style="font-weight: bold;">&copy; 2024 GHIMA.</p>
+  </div>
+
+  
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function () {
+      const loadMoreBtn = $('#loadMoreBtn');
+      const gallery = $('#gallery');
+      const spinner = $('.loading-spinner');
+
+      const moreImages = [
+        { src: 'gallery/1.webp', href: 'gallery/1.webp', title: '' },
+        { src: 'gallery/2.webp', href: 'gallery/2.webp' },
+        { src: 'gallery/3.webp', href: 'gallery/3.webp'},
+        { src: 'gallery/4.webp', href: 'gallery/4.webp'  },
+        { src: 'gallery/5.webp', href: 'gallery/5.webp' },
+        { src: 'gallery/6.webp', href: 'gallery/6.webp' },
+        { src: 'gallery/7.webp', href: 'gallery/7.webp' },
+        { src: 'gallery/8.webp', href: 'gallery/8.webp' },
+        { src: 'gallery/9.webp', href: 'gallery/9.webp' },
+        { src: 'gallery/10.webp', href: 'gallery/10.webp' },
+        { src: 'gallery/11.webp', href: 'gallery/11.webp' },
+        { src: 'gallery/12.webp', href: 'gallery/12.webp' },
+        { src: 'gallery/13.webp', href: 'gallery/13.webp' },
+        { src: 'gallery/14.webp', href: 'gallery/14.webp' },
+        { src: 'gallery/15.webp', href: 'gallery/15.webp' },
+        { src: 'gallery/16.webp', href: 'gallery/16.webp' },
+        { src: 'gallery/17.webp', href: 'gallery/17.webp' },
+        { src: 'gallery/18.webp', href: 'gallery/18.webp' },
+        { src: 'gallery/19.webp', href: 'gallery/19.webp' },
+        { src: 'gallery/20.webp', href: 'gallery/20.webp' },
+        { src: 'gallery/21.webp', href: 'gallery/21.webp' },
+        { src: 'gallery/22.webp', href: 'gallery/22.webp' },
+        { src: 'gallery/23.webp', href: 'gallery/23.webp' },
+      ];
+
+      let imagesLoaded = 4; // Number of images initially loaded
+
+      loadMoreBtn.on('click', function () {
+        loadMoreBtn.hide();
+        spinner.show();
+        
+        setTimeout(function () {
+          spinner.hide();
+          // Load more images
+          for (let i = imagesLoaded; i < imagesLoaded + 4 && i < moreImages.length; i++) {
+            const image = moreImages[i];
+            gallery.append(`
+              <div class="col-md-3 gallery-item">
+                <a href="${image.href}" data-lightbox="gallery" data-title="${image.title}">
+                  <img src="${image.src}" alt="${image.title}" loading="lazy">
+                </a>
+              </div>
+            `);
+          }
+          imagesLoaded += 4;
+          if (imagesLoaded >= moreImages.length) {
+            loadMoreBtn.hide(); // Hide button if no more images
+          } else {
+            loadMoreBtn.show(); // Show button if more images available
+          }
+        }, 1000); // Simulate network delay
+      });
+    });
+  </script>
+
+
+
+
+</body>
+</html>
